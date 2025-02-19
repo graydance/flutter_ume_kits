@@ -116,7 +116,10 @@ class DioPluggableState extends State<DioInspector> {
     return Material(
       color: Colors.black26,
       child: DefaultTextStyle.merge(
-        style: Theme.of(context).textTheme.bodyText2,
+        style: TextStyle(
+          fontSize: 14,
+          color: Colors.black,
+        ),
         child: Align(
           alignment: Alignment.bottomCenter,
           child: Container(
@@ -139,7 +142,11 @@ class DioPluggableState extends State<DioInspector> {
                       const Spacer(),
                       Text(
                         'Dio Requests',
-                        style: Theme.of(context).textTheme.subtitle1,
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                        ),
                       ),
                       Expanded(
                         child: Align(
